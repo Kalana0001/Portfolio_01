@@ -31,16 +31,16 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img src={laptopImg} alt="about" className="img-fluid"  />
           </Col>
         </Row>
-        <h1 className="project-heading">
+        <h1 className="project-heading" id="skills">
           Professional <strong className="purple">Skillset </strong>
         </h1>
 
         <Techstack />
 
-        <h1 className="project-heading" id="skills">
+        <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>
         <Toolstack />

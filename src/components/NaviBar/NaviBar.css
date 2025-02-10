@@ -54,7 +54,7 @@ ul {
 }
 
 .nav__logo:hover {
-    color: hsl(0, 69%, 61%);
+    color: #F432FF;
 }
 
 .nav__btns {
@@ -71,7 +71,7 @@ ul {
 
 .nav__toggle:hover,
 .theme-customization:hover {
-    color: hsl(0, 69%, 61%);
+    color: #F432FF;
 }
 
 .nav__toggle {
@@ -115,7 +115,7 @@ ul {
 }
 
 .nav__link:hover {
-    color: hsl(0, 69%, 61%);
+    color: #F432FF;
 }
 
 .nav__icon {

@@ -115,7 +115,7 @@ const LetsConnect = () => {
                         </li>
                         <li className="socials-icons">
                             <a
-                                href="https://www.linkedin.com/in/kalana-de-silva-088265277/"
+                                href="https://code100journey.blogspot.com/"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="icon-colours home-social-iconss"

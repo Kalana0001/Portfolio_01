@@ -79,6 +79,11 @@ function NaviBar() {
                         </a>
                     </li>
                     <li class="nav__item">
+                        <a href="#certificates" id='nav_items_' class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Certifications
+                        </a>
+                    </li>
+                    <li class="nav__item">
                         <a href="#contact" id='nav_items_' class="nav__link">
                             <i class="uil uil-message nav__icon"></i> Contact 
                         </a>

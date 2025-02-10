@@ -31,7 +31,7 @@ function Home() {
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
-                <button href="" className="home_btn1"><span className="home_btm2">Let's Connect</span><span className="home_arrow"><FaRegArrowAltCircleRight /></span></button>
+                <a href="#contact" className="letsbtn"><button className="home_btn1"><span className="home_btm2">Let's Connect</span><span className="home_arrow"><FaRegArrowAltCircleRight /></span></button></a>
               </div>
             </Col>
 

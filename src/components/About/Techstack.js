@@ -23,7 +23,8 @@ import { SiFlutter } from "react-icons/si";
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <div >
+    <Row style={{ justifyContent: "center", paddingBottom: "50px" }} >
       <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus />
         <p className="skillsp">C++</p>
@@ -77,6 +78,7 @@ function Techstack() {
         <p className="skillsp">FLUTTER</p>
       </Col>
     </Row>
+    </div>
   );
 }
 

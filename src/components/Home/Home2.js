@@ -2,12 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg1 from "../../Assets/github.png";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub,} from "react-icons/ai";
+import { SiHackerrank } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaBlogger } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -77,12 +75,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="#"
+                  href="https://www.hackerrank.com/profile/kalanasilva0101"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <SiHackerrank />
                 </a>
               </li>
               <li className="social-icons">
@@ -97,12 +95,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="#"
+                  href="https://code100journey.blogspot.com/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 > 
-                  <AiFillInstagram />
+                  <FaBlogger />
                 </a>
               </li>
             </ul>
