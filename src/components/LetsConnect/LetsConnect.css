@@ -145,15 +145,10 @@
         text-align: center;
     }
 
-    .contact-info p, .contact-info h2, .contact-form input, .contact-form textarea, .contact-form button, .tagline {
+    .contact-info .contact_p1, .contact-info .cobtact_h1, .contact-form input, .contact-form textarea, .contact-form button {
         margin: 10px 0;
     }
-
     .contact-info {
         margin-bottom: 20px;
-    }
-
-    .tagline {
-        margin-left: 0;
     }
 }

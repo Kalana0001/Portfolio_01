@@ -2,8 +2,12 @@ import React, { useState } from 'react';
 import './LetsConnect.css'; // Import your CSS file for styling
 import Particle from '../Particle';
 import { AiFillGithub, AiOutlineTwitter, AiFillInstagram } from "react-icons/ai";
+import { SiHackerrank } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaBlogger } from "react-icons/fa";
 import emailjs from 'emailjs-com'; // Make sure to install EmailJS
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const LetsConnect = () => {
     const [formData, setFormData] = useState({
@@ -12,8 +16,6 @@ const LetsConnect = () => {
         subject: '',
         message: ''
     });
-
-    const [successMessage, setSuccessMessage] = useState('');
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -27,17 +29,24 @@ const LetsConnect = () => {
         e.preventDefault();
 
         const templateParams = {
-            from_name: formData.name,      // Sender's name
-            from_email: formData.email,    // Sender's email
-            subject: formData.subject,     // Subject of the email
-            message: formData.message      // Message body
+            from_name: formData.name,
+            from_email: formData.email,
+            subject: formData.subject,
+            message: formData.message
         };
 
-
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_USER_ID')
+        emailjs.send('service_3sdihqx', 'template_tecxjdl', templateParams, 'QuWJ-bCniABKYHMEa')
             .then((response) => {
                 console.log('Email sent successfully!', response.status, response.text);
-                setSuccessMessage('Your message has been sent successfully!');
+                toast.success('Your message has been sent successfully!', {
+                    position: 'top-right',
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
                 setFormData({
                     name: '',
                     email: '',
@@ -47,7 +56,15 @@ const LetsConnect = () => {
             })
             .catch((error) => {
                 console.error('Failed to send email:', error);
-                setSuccessMessage('Failed to send message. Please try again later.');
+                toast.error('Failed to send message. Please try again later.', {
+                    position: 'top-right',
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
             });
     };
 
@@ -56,8 +73,8 @@ const LetsConnect = () => {
             <Particle />
             <div className="contact-container">
                 <div className="contact-info">
-                    <h2><b>Let's Connect</b></h2>
-                    <p>
+                    <h2 className='cobtact_h1'><b>Let's Connect</b></h2>
+                    <p className='contact_p1'>
                         I love coding and enjoy taking on new challenges. 
                         I also have a passion for design and always aim for clean, clear, and effective work. 
                         I'm currently working on a few exciting projects and constantly looking to learn and improve. 
@@ -78,12 +95,12 @@ const LetsConnect = () => {
                         </li>
                         <li className="socials-icons">
                             <a
-                                href="#"
+                                href="https://www.hackerrank.com/profile/kalanasilva0101"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="icon-colours home-social-iconss"
                             >
-                                <AiOutlineTwitter />
+                                <SiHackerrank />
                             </a>
                         </li>
                         <li className="socials-icons">
@@ -103,7 +120,7 @@ const LetsConnect = () => {
                                 rel="noreferrer"
                                 className="icon-colours home-social-iconss"
                             >
-                                <AiFillInstagram />
+                                <FaBlogger />
                             </a>
                         </li>
                     </ul>
@@ -142,9 +159,11 @@ const LetsConnect = () => {
                         required
                     />
                     <button type="submit">Send</button>
-                    {successMessage && <div className="success-message">{successMessage}</div>}
                 </form>
             </div>
+
+            {/* Toast Container */}
+            <ToastContainer />
         </div>
     );
 };

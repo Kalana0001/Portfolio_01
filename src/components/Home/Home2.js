@@ -24,7 +24,7 @@ function Home2() {
               <br />
               <br />I have experience in working with languages like 
               <i>
-                <b className="purple"> C++, HTML, CSS, and Java. </b>
+                <b className="purple"> C++, HTML, CSS,React, Springboot and Java. </b>
               </i>
               <br />
               <br />
@@ -38,7 +38,7 @@ function Home2() {
               <br />
               <br />
               I consistently leverage my passion for product development by utilizing
-              <b className="purple"> Node.js</b> along with 
+              <b className="purple"> Springboot, Node.js</b> along with 
               <i>
                 <b className="purple">
                   {" "}

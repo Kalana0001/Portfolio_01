@@ -13,7 +13,7 @@ function AboutCard() {
             <br />
             I am currently pursuing my Bachelor's degree in Software Engineering.
             <br />
-            I have completed a Diploma in Software Engineering at NIBM Galle.
+            I have completed a Diploma & Higher Diploma in Software Engineering at NIBM Galle.
             <br />
             Looking forward to connecting with you all!
             <br />

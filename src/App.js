@@ -7,6 +7,7 @@ import NaviBar from "./components/NaviBar/NaviBar";
 import MyProjects from "./components/MyProjects/MyProjects";
 import LetsConnect from "./components/LetsConnect/LetsConnect";
 import Footer from "./components/Footer/Footer";
+import Certificate from "./components/Certificate/Certificate";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Home/>
           <About/>
           <MyProjects/>
+          <Certificate/>
           <LetsConnect/>
           <Footer/>
       </div>

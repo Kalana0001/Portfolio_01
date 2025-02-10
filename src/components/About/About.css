@@ -228,4 +228,6 @@ html {
   .fork-btn-inner::after {
     display: none !important;
   }
-  
+  .skillsp{
+    font-size: 15px;
+  }
